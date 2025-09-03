@@ -18,5 +18,45 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body class="bg-[#1E293B] text-white">
+    <!-- navigation bar -->
+    <header>
+      <div class="flex justify-between p-8 items-center">
+        <h2 class="logo font-poppins font-bold text-3xl ml-10 max-sm:text-xl">
+          Rizki<span>FOLIO</span>
+        </h2>
+        <nav
+          class="space-x-10 font-lato text-lg font-semibold transition-all p-5 md:hidden lg:hidden xl:flex max-sm:hidden"
+        >
+          <a href="#beranda" class="hover:text-gray-500">Beranda</a>
+          <a href="#tentangsaya" class="hover:text-gray-500">Tentang Saya</a>
+          <a href="#skill" class="hover:text-gray-500">Skill</a>
+          <a href="#project" class="hover:text-gray-500">Project</a>
+        </nav>
+        <div
+          class="hamburger cursor-pointer sm:block md:block lg:block xl:hidden"
+          id="hamburger-menu"
+        >
+          <iconify-icon
+            icon="charm:menu-hamburger"
+            width="36"
+            height="36"
+            style="color: #fff"
+          ></iconify-icon>
+        </div>
+      </div>
+      <!-- Dropdown menu for mobile/tablet -->
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-[#213147] text-white text-lg font-semibold font-poppins transition-all space-y-5 p-5 xl:hidden"
+      >
+        <a href="#beranda" class="hover:text-gray-400">Beranda</a>
+        <a href="#tentangsaya" class="hover:text-gray-400">Tentang Saya</a>
+        <a href="#skill" class="hover:text-gray-400">Skill</a>
+        <a href="#project" class="hover:text-gray-400">Project</a>
+      </div>
+    </header>
+    <script src="app.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+  </body>
 </html>
